@@ -104,7 +104,6 @@ header {
 }
 
 .card:hover {
-    transform: translateY(-6px);
     box-shadow: 0 0 30px rgba(0, 255, 157, 0.6),
                 0 0 20px rgba(0, 191, 255, 0.4); /* glow portal */
 }
