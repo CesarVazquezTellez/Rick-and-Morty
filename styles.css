@@ -1,0 +1,175 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #0b0c10; /* fondo oscuro minimalista */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-image: url('./wp5949071.jpg'); /* aquí va la ruta de tu imagen */
+    background-size: cover;      /* hace que la imagen cubra todo el header */
+    background-position: center; /* centra la imagen */
+    background-repeat: no-repeat;/* evita que se repita */
+    padding: 8rem;
+    text-align: center;
+    color: #ffffff;              /* texto en blanco para contraste */
+}
+
+/* Tarjeta del header con glassmorphism */
+.header-card {
+    display: inline-block; /* se ajusta al contenido */
+    background: linear-gradient(
+        135deg,
+        rgba(0, 255, 157, 0.25),
+        rgba(0, 191, 255, 0.25)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 25px rgba(0, 255, 157, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.header-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 30px rgba(0, 255, 157, 0.6),
+                0 0 20px rgba(0, 191, 255, 0.4);
+}
+
+.header-card h1 {
+    color: #00ff9d;
+    margin-bottom: 1rem;
+}
+
+.header-card input {
+    width: 220px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+.header-card button {
+    background-color: #99FCFF;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    color: #0b0c10;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.header-card button:hover {
+    background-color: #00ff9d;
+    color: #0b0c10;
+}
+
+
+
+/* Contenedor de tarjetas */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Tarjetas */
+.card {
+    background: linear-gradient(
+        135deg,
+        rgba(0, 255, 157, 0.25),
+        rgba(0, 191, 255, 0.25)
+    ); /* degradado translúcido verde-azul */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: center;
+    backdrop-filter: blur(12px); /* efecto glass */
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 25px rgba(0, 255, 157, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 30px rgba(0, 255, 157, 0.6),
+                0 0 20px rgba(0, 191, 255, 0.4); /* glow portal */
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #00ff9d;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+/* Botones */
+.btn {
+    background-color: #99FCFF;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: #0b0c10;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00ff9d;
+    color: #0b0c10;
+}
+
+/* Vista de detalles */
+.details {
+    padding: 2rem;
+    text-align: center;
+}
+
+.details h3 {
+    color: #00ff9d;
+    margin-bottom: 1rem;
+}
+
+.details img {
+    width: 200px;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+#btnBack {
+    background-color: #00bfff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: #0b0c10;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#btnBack:hover {
+    background-color: #00ff9d;
+    color: #0b0c10;
+}
+
+/* Invisible */
+.invisible {
+    display: none;
+}
