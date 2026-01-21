@@ -12,7 +12,7 @@ const createCard = (character) => {
         <h2>${character.name}</h2>
         <img src="${character.image}" alt="${character.name}">
         <button 
-            onclick="swichInvisible()"
+            onclick="switchInvisible()"
             class="btn"
             data-id="${character.id}">Detalles</button>
     `
